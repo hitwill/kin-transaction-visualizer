@@ -1,0 +1,84 @@
+body {
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    width: 960px;
+}
+
+.whale {
+    background: black;
+    -webkit-transition: background 3s;
+    -moz-transition: background 3s;
+    -o-transition: background 3s;
+    transition: background 3s
+}
+
+.normal {
+    background: #1F4788;
+    -webkit-transition: background 3s;
+    -moz-transition: background 3s;
+    -o-transition: background 3s;
+    transition: background 3s;
+}
+
+#kin {
+    height: 70px;
+}
+
+.header {
+    display: inline-block;
+    color: white;
+}
+
+    .header h1 {
+        margin-bottom: 0px;
+    }
+
+
+
+#sidebar {
+    width: 400px;
+    background: #2c3e50;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: -400px;
+    transition: right 2s ease;
+    -webkit-transition: right 2s ease;
+    -moz-transition: right 2s ease;
+    -o-transition: right 2s ease;
+    z-index: 50;
+    padding-left:8px;
+    padding-right:5px;
+}
+
+    #sidebar.visible {
+        right: 0px;
+        transition: right 2s ease;
+        -webkit-transition: right 2s ease;
+        -moz-transition: right 2s ease;
+        -o-transition: right 2s ease;
+    }
+
+
+#sidebar-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    left: -60px;
+    top: 0px;
+}
+
+    #sidebar-btn span {
+        background-color: white;
+        height: 1px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+        #sidebar-btn span:nth-child(2) {
+            width: 75%;
+        }

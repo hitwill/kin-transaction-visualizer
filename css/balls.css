@@ -1,0 +1,54 @@
+
+
+.balls {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    box-shadow: 3px 3px 10px grey;
+}
+
+#balls {
+    overflow: hidden;
+}
+
+.amount {
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    position: relative;
+    top: 25%;
+    left: 25%;
+    display: block;
+    line-height: 96%;
+}
+
+.app {
+    display: block;
+    font-size: small;
+}
+
+.square {
+    border-radius: 25px;
+    height: 2px;
+}
+
+    .square .amount {
+        font-size: small;
+    }
+
+.ballwhale {
+    border-style: double;
+    border-width: 5px;
+    border-color: whitesmoke;
+}
+
+.donate {
+    color: white;
+    display: block;
+    font-size: x-small;
+}
+
+    .donate .address {
+        font-size: 5px;
+    }
