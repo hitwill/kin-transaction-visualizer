@@ -14,3 +14,7 @@ A running version of this code can be found on: [kin-bubbles.herokuapp.com](http
 **Bubble size:** is the size of the earn/ spend - with >=100 Kin getting a special animation
 
 **Anon bubble:** Some transactions do not have an app memo, and may be from exchanges.
+
+
+## Installation
+Clone or download to your desktop, and run home.html on your browser
