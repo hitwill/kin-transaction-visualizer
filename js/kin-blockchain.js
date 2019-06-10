@@ -58,6 +58,7 @@ function getSortedKeys(obj) {
 //listen for transactions
 var es = server.transactions()
     .cursor('now')
+    .limit(200)
     .stream({
         onmessage: txHandler
     });
