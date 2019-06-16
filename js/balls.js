@@ -88,7 +88,7 @@ function drawObj(payment, app, id) {
         + 'px; background-color: ' + colString + ';">' +
         '<span class="amount">' + payment + denomination + '<span class="app">' + appCodeToName(app) + '</span></span>'
         + '</div>');
-    var time = Math.log(dimensions) * 1000;
+    var time = Math.log(dimensions) * 700;
 
     if (isWhale) {
         $('#' + id).addClass("ballwhale");

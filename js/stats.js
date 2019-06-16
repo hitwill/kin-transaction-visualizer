@@ -1,9 +1,14 @@
 $(document).ready(function () {
     setStats();
-    $('#sidebar-btn').on('click', function () {
-        $('#sidebar').toggleClass('visible');
+    $('#details_button').on('click', function () {
+        var $this = $(this);
+        $this.toggleClass('SeeMore2');
+        if ($this.hasClass('SeeMore2')) {
+            $this.text('Show Details');
+        } else {
+            $this.text('Hide Details');
+        }
     });
-    $('#sidebar-btn').click();
 });
 
 
@@ -15,17 +20,10 @@ function setStats() {
         }, 6000);
         percent = Math.max(percent, parseFloat($(this).attr('data-percent')));
     });
-    setWeather(percent);
 
 }
 
-function setWeather(percent) {
-    var maxOpacity = 0.3;
-    var change = percent / 30;
-    opacity = (change * maxOpacity).toFixed(2);
-    opacity = Math.min(opacity, maxOpacity);
-    $("#waves").fadeTo(2000, opacity);
-}
+
 
 function setMountains(totalSpends) {
     //first pad the array to make sure we alway shave values

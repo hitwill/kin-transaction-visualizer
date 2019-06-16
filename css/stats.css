@@ -1,6 +1,5 @@
 #stats {
     width: 100%;
-    position: absolute;
     z-index: 10;
     opacity: 0.7;
 }
