@@ -74,11 +74,6 @@ function initStats() {
     setPercents(0, 0);
     resetCounts();
     setInterval(updateStats, interval); //start monitoring stats
-    if ($('#details_button').text().trim() === 'Hide Details') {
-        $('#details_button').click();
-    }
-    
-
 }
 
 function setPerSecond() {

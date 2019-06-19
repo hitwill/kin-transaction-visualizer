@@ -1,14 +1,5 @@
 $(document).ready(function () {
     setStats();
-    $('#details_button').on('click', function () {
-        var $this = $(this);
-        $this.toggleClass('SeeMore2');
-        if ($this.hasClass('SeeMore2')) {
-            $this.text('Show Details');
-        } else {
-            $this.text('Hide Details');
-        }
-    });
 });
 
 

@@ -3,7 +3,7 @@ var scrH = 100;
 
 
 function random(max) {
-    return Math.floor(Math.random() * max);
+    return  Math.floor(Math.random() * max);
 }
 
 var stringToColour = function (str) {
@@ -58,6 +58,7 @@ function hexToRgb(hex) {
     } : null;
 }
 
+var clearQ = 0;
 function drawObj(payment, app, id) {
     var x = random(scrW);
     var y = random(scrH);
@@ -82,37 +83,43 @@ function drawObj(payment, app, id) {
         shapeClass = ' square';
     }
 
-    dimensions = dimensions * multiplier;
-    var zindex = random(10);
-    $('#balls').prepend('<div  class="balls' + shapeClass + '" id="' + id + '" style="z-index:' + zindex +'; top: ' + y + 'px; left: ' + x
-        + 'px; background-color: ' + colString + ';">' +
-        '<span class="amount">' + payment + denomination + '<span class="app">' + appCodeToName(app) + '</span></span>'
-        + '</div>');
-    var time = Math.log(dimensions) * 700;
 
-    if (isWhale) {
-        $('#' + id).addClass("ballwhale");
-        whaleBg(true);// we got a big one
-    }
+    setTimeout(() => {
+        dimensions = dimensions * multiplier;
+        var zindex = random(10);
+        $('#balls').prepend('<div  class="balls' + shapeClass + '" id="' + id + '" style="z-index:' + zindex + '; top: ' + y + 'px; left: ' + x
+            + 'px; background-color: ' + colString + ';">' +
+            '<span class="amount">' + payment + denomination + '<span class="app">' + appCodeToName(app) + '</span></span>'
+            + '</div>');
+        var time = Math.log(dimensions) * 800;
 
-    $('[id="' + id + '"]').animate({
-        //$('#' + id).animate({
-        width: dimensions,
-        height: dimensions,
-        top: (y - (dimensions / 2)),
-        left: (x - (dimensions / 2)),
-        opacity: 0.6
-    }, time, function () {
+        if (isWhale) {
+            $('#' + id).addClass("ballwhale");
+            whaleBg(true);// we got a big one
+        }
+
         $('[id="' + id + '"]').animate({
             //$('#' + id).animate({
-            opacity: 0,
-            width: dimensions * 0.7,
-            height: dimensions * 0.7,
-        }, time * 0.1, function () {
-            if ($(this).hasClass("ballwhale")) whaleBg(false);
-            $(this).remove();
+            width: dimensions,
+            height: dimensions,
+            top: (y - (dimensions / 2)),
+            left: (x - (dimensions / 2)),
+            opacity: 0.6
+        }, time, function () {
+            $('[id="' + id + '"]').animate({
+                //$('#' + id).animate({
+                opacity: 0,
+                width: dimensions * 0.7,
+                height: dimensions * 0.7,
+            }, time * 0.1, function () {
+                if ($(this).hasClass("ballwhale")) whaleBg(false);
+                $(this).remove();
+            });
         });
-    });
+
+    }, clearQ >= 100 ? 0 : random(3)*1000);
+    clearQ++;
+    if (clearQ >= 100) clearQ = 0;
 }
 
 
