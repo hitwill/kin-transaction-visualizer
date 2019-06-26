@@ -144,6 +144,8 @@ function appCodeToName(app) {
     appArray['jdnn'] = 'SXLVE';  
     appArray['pgbv'] = 'Pause For';  
     appArray['lsff'] = 'Pop.in';  
+    appArray['uhrz'] = 'Tiny Ted';  
+    appArray['mgsv'] = 'Migration Serv.';  
 
     
 
