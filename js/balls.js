@@ -83,6 +83,13 @@ function drawObj(payment, app, id) {
         shapeClass = ' square';
     }
 
+    if (typeof show !== 'undefined') {
+        if (app.toLowerCase() !== show.toLowerCase) return;
+    }
+
+    if (typeof hide !== 'undefined') {
+        if (app.toLowerCase() === hide.toLowerCase) return;
+    }
 
     setTimeout(() => {
         dimensions = dimensions * multiplier;
@@ -137,7 +144,7 @@ function appCodeToName(app) {
     appArray['rced'] = 'Kinny';  
     appArray['vefj'] = 'PlanetsNu';  
     appArray['jf1d'] = 'SpeedGenius';  
-    appArray['XJV6'] = 'Kinpet';  
+    appArray['xjv6'] = 'Kinpet';  
     appArray['xnxb'] = 'Peerbet';  
     appArray['aqv3'] = 'imgvue';  
     appArray['kfit'] = 'kinfit';  
@@ -145,8 +152,11 @@ function appCodeToName(app) {
     appArray['pgbv'] = 'Pause For';  
     appArray['lsff'] = 'Pop.in';  
     appArray['uhrz'] = 'Tiny Ted';  
+    appArray['a08c'] = 'TRK';  
+    appArray['uvoj'] = 'Subway Sc';  
+    
     appArray['mgsv'] = 'Migration Service';  
-
+    
     
 
     if (typeof appArray[app.toLowerCase()] !== 'undefined') {
