@@ -84,11 +84,11 @@ function drawObj(payment, app, id) {
     }
 
     if (typeof show !== 'undefined') {
-        if (app.toLowerCase() !== show.toLowerCase) return;
+        if (app.toLowerCase() !== show.toLowerCase()) return;
     }
 
     if (typeof hide !== 'undefined') {
-        if (app.toLowerCase() === hide.toLowerCase) return;
+        if (app.toLowerCase() === hide.toLowerCase()) return;
     }
 
     setTimeout(() => {
