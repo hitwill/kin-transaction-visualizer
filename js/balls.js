@@ -85,10 +85,12 @@ function drawObj(payment, app, id) {
 
     if (typeof show !== 'undefined') {
         if (app.toLowerCase() !== show.toLowerCase()) return;
+        if (appCodeToName(app).toLowerCase() !== show.toLowerCase()) return;
     }
 
     if (typeof hide !== 'undefined') {
         if (app.toLowerCase() === hide.toLowerCase()) return;
+        if (appCodeToName(app).toLowerCase() === hide.toLowerCase()) return;
     }
 
     setTimeout(() => {
