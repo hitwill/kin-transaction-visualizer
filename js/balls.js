@@ -83,15 +83,7 @@ function drawObj(payment, app, id) {
         shapeClass = ' square';
     }
 
-    if (typeof show !== 'undefined') {
-        if (app.toLowerCase() !== show.toLowerCase() &&
-        appCodeToName(app).toLowerCase() !== show.toLowerCase()) return;
-    }
-
-    if (typeof hide !== 'undefined') {
-        if (app.toLowerCase() === hide.toLowerCase() ||
-        appCodeToName(app).toLowerCase() === hide.toLowerCase()) return;
-    }
+   
 
     setTimeout(() => {
         dimensions = dimensions * multiplier;
@@ -156,6 +148,7 @@ function appCodeToName(app) {
     appArray['uhrz'] = 'Tiny Ted';  
     appArray['a08c'] = 'TRK';  
     appArray['uvoj'] = 'Subway Sc';  
+    appArray['zmoq'] = 'Catpurse';  
     
     appArray['mgsv'] = 'Migration Service';  
     

@@ -33,6 +33,18 @@ var txHandler = function (txResponse) {
     if (memo.split('-')[1]) app = memo.split('-')[1];
     if (memo.split('-')[2]) id = memo.split('-')[2] + id;//make sure id is random
     app = app.toLocaleLowerCase();
+
+    if (typeof show !== 'undefined') {
+        if (app.toLowerCase() !== show.toLowerCase() &&
+            appCodeToName(app).toLowerCase() !== show.toLowerCase()) return;
+    }
+
+    if (typeof hide !== 'undefined') {
+        if (app.toLowerCase() === hide.toLowerCase() ||
+            appCodeToName(app).toLowerCase() === hide.toLowerCase()) return;
+    }
+
+
     if (typeof totalTransactions[app] === 'undefined') totalTransactions[app] = 0;//initialize
 
     switch (txType) {

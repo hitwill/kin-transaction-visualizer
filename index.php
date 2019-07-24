@@ -56,7 +56,7 @@
     <script type="text/javascript" src="js/balls.js?t=14"></script>
     <script type="text/javascript" src="js/stats.js?t=14"></script>
     <script type="text/javascript" src="js/kin-sdk.min.js?t=7"></script>
-    <script type="text/javascript" src="js/kin-blockchain.js?t=15"></script>
+    <script type="text/javascript" src="js/kin-blockchain.js?t=16"></script>
 
     <title>Kin Transaction Viewer</title>
     <meta property="og:title" content="Kin Transaction Visualizer" />
