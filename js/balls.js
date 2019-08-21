@@ -148,6 +148,8 @@ function appCodeToName(app) {
     appArray['uhrz'] = 'Tiny Ted';  
     appArray['a08c'] = 'TRK';  
     appArray['uvoj'] = 'Subway Sc';  
+    appArray['mkme'] = 'MonkingMe';  
+    appArray['mech'] = 'SuperMechs';  
     appArray['zmoq'] = 'Catpurse';  
     
     appArray['mgsv'] = 'Migration Service';  
