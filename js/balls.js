@@ -151,6 +151,10 @@ function appCodeToName(app) {
     appArray['mkme'] = 'MonkingMe';  
     appArray['mech'] = 'SuperMechs';  
     appArray['zmoq'] = 'Catpurse';  
+    appArray['nbps'] = 'L&L Radio';  
+    appArray['8onm'] = 'Kimeo';  
+    appArray['g58b'] = 'Kinetik';  
+
     
     appArray['mgsv'] = 'Migration Service';  
     
