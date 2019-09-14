@@ -154,6 +154,7 @@ function appCodeToName(app) {
     appArray['nbps'] = 'L&L Radio';  
     appArray['8onm'] = 'Kimeo';  
     appArray['g58b'] = 'Kinetik';  
+    appArray['nm8e'] = 'Subti';  
 
     
     appArray['mgsv'] = 'Migration Service';  
