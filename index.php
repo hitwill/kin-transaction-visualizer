@@ -115,6 +115,10 @@
                    target="_blank">
                     <img class="img-thumbnail" src="img/catpurse.png" style="height: 37px; padding:0px;">
                 </a>
+				<a style="text-decoration:underline;" class="text-muted" href="https://chrome.google.com/webstore/detail/tipster/mbblfalbndfkpfnlimjnaooandenimpj"
+                   target="_blank">
+                    <img class="img-thumbnail" src="img/tipster.png" style="height: 37px; padding:0px;">
+                </a>
             </div>
         </div>
         <div class="row">
