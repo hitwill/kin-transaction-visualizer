@@ -123,7 +123,7 @@ function drawObj(payment, app, id) {
     if (clearQ >= 100) clearQ = 0;
 }
 
-
+//todo: add links also so on click of bubbles you go there 
 function appCodeToName(app) {
     var appArray = [];
     appArray['kit'] = 'Kinit';
@@ -146,7 +146,7 @@ function appCodeToName(app) {
     appArray['pgbv'] = 'Pause For';  
     appArray['lsff'] = 'Pop.in';  
     appArray['uhrz'] = 'Tiny Ted';  
-    appArray['a08c'] = 'TRK';  
+    appArray['m8jd'] = 'TRK';  
     appArray['uvoj'] = 'Subway Sc';  
     appArray['mkme'] = 'MonkingMe';  
     appArray['mech'] = 'SuperMechs';  
