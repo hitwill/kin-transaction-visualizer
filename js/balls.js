@@ -155,6 +155,10 @@ function appCodeToName(app) {
     appArray['8onm'] = 'Kimeo';  
     appArray['g58b'] = 'Kinetik';  
     appArray['nm8e'] = 'Subti';  
+    appArray['psip'] = 'PsiphonPro';  
+
+
+    
 
     
     appArray['mgsv'] = 'Migration Service';  
