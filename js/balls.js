@@ -156,6 +156,8 @@ function appCodeToName(app) {
     appArray['g58b'] = 'Kinetik';  
     appArray['nm8e'] = 'Subti';  
     appArray['psip'] = 'PsiphonPro';  
+    appArray['obpk'] = 'Dog Rescue';  
+    appArray['trbl'] = 'Trebel';  
 
 
     
