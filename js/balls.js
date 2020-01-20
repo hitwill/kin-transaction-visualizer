@@ -75,7 +75,7 @@ function drawObj(payment, app, id) {
     var colString = ' rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ');';
     
     if (!isNaN(payment)) {
-        dimensions = Math.max(Math.sqrt(payment), 1);
+        dimensions = Math.max(Math.log(Math.sqrt(payment), 1));
         denomination = ' Kin';
         if (payment >= whaleAmount) isWhale = true;
         payment = parseFloat(payment).toLocaleString();
