@@ -66,16 +66,16 @@ function drawObj(payment, app, id) {
     var multiplier = 100;
     var denomination = '';
     var shapeClass = '';
-    var whaleAmount = 100;
+    var whaleAmount = 100000;
     var col = stringToColour(app); //[random(255), random(128), random(64)];
     var rgb = hexToRgb(darkenColr(col));
     var isWhale = false;
     //var col = [random(255), random(128), random(64)];
     if (!rgb) rgb = { r: 0, g: 0, b: 0 };
     var colString = ' rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ');';
-
+    
     if (!isNaN(payment)) {
-        dimensions = Math.max(Math.log(payment), 1);
+        dimensions = Math.max(Math.sqrt(payment), 1);
         denomination = ' Kin';
         if (payment >= whaleAmount) isWhale = true;
         payment = parseFloat(payment).toLocaleString();
